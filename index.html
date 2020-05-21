@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sthānīya Khānā</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="navbar">
+      <a href="#" class="logo">Sthānīya <span>Khānā</span></a>
+        <ul>
+          <li><a href="index.html" class="active">Home</a>
+          <li><a href="index.html">Menu</a>
+          <li><a href="index.html">About</a>
+          <li><a href="index.html">Contact</a>
+        </ul>
+        <span class="menuIcon" onclick="menuToggle();"></span>
+    </header>
+	
+	
+	<section>
+		<div class="carousel">
+			<!----Indicators---->
+			<div class="carousel-slider">
+				<div class="leftArrow" onclick="plusSlides(-1);"><span class="arrow arrowLeft"></span></div>
+				<div class="rightArrow" onclick="plusSlides(1);"><span class="arrow arrowRight"></span></div>
+				<div class="imgholder">
+					<img src="1.jpg">
+				</div>	
+				<div class="imgholder">
+					<img src="2.jpg">
+				</div>
+				<div class="imgholder">
+					<img src="3.jpg">
+				</div>
+				<div class="imgholder">
+					<img src="4.jpg">
+				</div>
+			</div>
+			<div id="dotsContainer"></div>
+		</div>
+	</section>
+	
+    
+	
+	<div class="content">
+      <div class="bannerText" id="slideshowText">
+        <div class="active">
+          <h2>MoMo (म:म:)</h2>
+          <p>Momo, म:म:<br> - also known as momo-cha ममचा, is one of the most popular dishes in Nepal.  They are bite-size dumplings made with a spoonful of stuffing wrapped in dough.  Momos are usually steamed, though they are sometimes fried or steam-fried.  The filling of meat or vegetables becomes succulent as it produces an intensively flavored broth sealed inside the wrappers.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div>
+          <h2>Choila<br>
+          (Chhoylā, छ्वेला, Chhwelā)</h2>
+          <p>Choila is a specialty of the Nepalese Newari, and it consists of grilled meat - either water buffalo, chicken, or mutton. The dish is characterized by its spiciness coming from green and red chilis, along with spices such as turmeric and fenugreek seeds.It is usually served with a side dish of pounded rice.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div>
+          <h2>Sekuwa</h2>
+          <p>Sekuwa is a Nepalese specialty dish consisting of grilled and skewered lamb, chicken, pork, or goat meat. Before grilling, the meat is combined with fresh herbs and spices. It is one of the most popular street food items in the country. The dish is typically served with baji (pounded rice) and achar (tomato pickle).</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+	  
+      <div class="bannerImg" id="slideshow">
+        <img src="img1.jpg" class="active">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+      </div>
+    </div>
+      <div class="icons">
+          <ul class="sci">
+            <li><a href="#"><img src="fb.jpg"></a>
+            <li><a href="#"><img src="insta.jpg"></a>
+            <li><a href="#"><img src="twitter.jpg"></a>
+          </ul>
+          <ul class="controls">
+            <li><a><img src="left.jpg" onclick="prevSlide();prevSlideText();"></a>
+            <li><a><img src="right.jpg" onclick="nextSlide();nextSlideText();"></a>
+      </div>
+  </div>
+  
+  <script src="myscripts.js"> 
+	</script>
+</body>
+</html>
